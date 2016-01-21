@@ -13,6 +13,17 @@ body{
 	color:#fff;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3{
+	color: #5b545b;
+}
+
+h4{
+	color:#868487;
+}
 
 .brand-name{
 	text-transform: uppercase;
@@ -162,17 +173,37 @@ a:hover{
 	margin:20px;
 	border-radius: 4px;
 	display: inline-block;
-	width:150px;
+	width:175px;
 	background: none;
 	border:1px solid #fff;
 	text-transform: uppercase;
 	color: #fff;
+	text-align: center;
 	transition:0.2s all ease-in;
 }
 
 .action-button:hover{
 	background: #D67A65;
 	border:1px solid #D67A65;
+	color: #fff;
+}
+
+.action-button-orange{
+	padding:10px 15px 10px 15px;
+	margin:20px 0px;
+	border-radius: 4px;
+	display: inline-block;
+	width:175px;
+	text-align: center;
+	background: none;
+	border:1px solid #D67A65;
+	text-transform: uppercase;
+	color: #D67A65;
+	transition:0.2s all ease-in;
+}
+
+.action-button-orange:hover{
+	background: #D67A65;
 	color: #fff;
 }
 
@@ -184,6 +215,35 @@ a:hover{
 	padding:50px;
 	background: #f8f8f8;
 	margin-top:50px;
+}
+
+.gray{
+	background: #f8f8f8 !important;
+}
+
+.features-expert{
+	padding:60px;
+	background: #fff;
+	padding-right:0px;
+	margin-top:50px;
+	position:relative;
+	display:block;
+	min-height:590px;
+}
+
+.features-expert h2{
+	margin:25px 0px;
+}
+
+.features-expert h4{
+	font-size:24px;
+	margin:20px 0px;
+}
+
+.features-expert ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
 }
 
 section h1{
@@ -210,7 +270,7 @@ section h1{
     font-weight: 400;
 }
 
-.feature-heading{
+.hiw-heading{
 	text-transform: none;
 	color: #333;
 	font-size: 22px;
@@ -223,13 +283,73 @@ p{
 	color: #868487;
 }
 
-.features-icon {
+.hiw-icon {
     color: #d67a65;
     margin-bottom: 36px;
     font-size: 40px;
 }
 
+.feature-icon{
+	max-width:22px;
+	float: left;
+	margin-right: 15px;
+}
+
+.faq{
+	padding: 60px;
+	margin-bottom: 50px;
+}
+
+#faq-slider{
+	margin-top:30px;
+	position: relative;
+}
+
+.footer{
+	background: #302533;
+}
+
+.footer p{
+	color: rgba(255,255,255,0.3);
+}
+
+.footer-text{
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.contact-text{
+	color: rgba(255,255,255,0.6);
+	font-size: 14px;
+	display: block;
+	text-align: left;
+	margin:10px 0px;
+}
+
+.margin-10{
+	margin-right:10px;
+}
+
+.sm-icon{
+	max-width:24px;
+	opacity: 0.4;
+	transition:0.1s all ease-in;
+	margin-right: 10px;
+}
+
+.sm-icon:hover{
+	opacity:1;
+}
+
 @media screen and (max-width: 480px) {
+
+	.features-expert img, .features-user img{
+		display: none;
+	}
+
+	.features-expert, .features-user, .faq{
+		padding:10px;
+	}
 
 	.container-table{
 		width:90%;

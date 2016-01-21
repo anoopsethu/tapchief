@@ -27,10 +27,10 @@
 
           <ul class="nav navbar-nav navbar-right">
 
-            <li><a href="">About</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">How it Works</a></li>
-            <li><a href="">FAQ</a></li>
+            <li><a href="#about" class="page-scroll">About</a></li>
+            <li><a href="#hiw" class="page-scroll">How it Works</a></li>
+            <li><a href="#features" class="page-scroll">Features</a></li>
+            <li><a href="#faq" class="page-scroll">FAQ</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -44,19 +44,19 @@
 	    </div>
 	</div> -->
 		<div id="particles"></div>
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container animated fadeIn">
                <img src="img/LogoTest.png" class="logo-main">
 		       <h1>Seek advice from industry experts</h1>
 		       <p class="description">Tapchief offers a cohesive platform to discover and schedule calls with experts to get advice across domains.</p>
-		       <p><a href="" class="action-button">Learn More</a></p>
+		       <p><a href="#hiw" class="action-button page-scroll">Learn More</a></p>
 			   <img src="img/image2.png" class="screenshot">
 			</div>
 	    </section>
 
 
 
-	    <section class="features">
+	    <section class="features" id="hiw">
         	<div class="container center">
         		<div class="row">
 					<h1>How it Works?</h1>
@@ -85,7 +85,7 @@
 
 
 
-	    <section class="features-expert">
+	    <section class="features-expert" id="features">
         	<div class="container">
         		<div class="row">
         			<div class="col-md-6 com-sm-12">
@@ -124,16 +124,16 @@
         				<h2>Connect to an expert</h2>
         				<ul>
         					<li>
-        						<img src="img/icon-mentor.png" class="feature-icon"><h4>Mentor</h4>
-        						<p>Join the Tapchief community of credible experts. A community centered around mutually benefitting from shared experience</p>
+        						<img src="img/icon-discover.png" class="feature-icon"><h4>Discover</h4>
+        						<p>Gain access to a vast pool of credible experts ranging across all industry domains.</p>
         					</li>
         					<li>
-        						<img src="img/icon-connect.png" class="feature-icon"><h4>Connect</h4>
-        						<p>Tapchief presents a brilliant opportunity for the leaders of today to connect to the key influencers of tomorrow.</p>
+        						<img src="img/icon-search.png" class="feature-icon"><h4>Smart Tag search</h4>
+        						<p>Search for experts in a variety of domains using relevant tags for the advice you seek.</p>
         					</li>
         					<li>
-        						<img src="img/icon-pay-it-forward.png" class="feature-icon"><h4>Pay-it-forward</h4>
-        						<p>With Tapchiefs unique Pay-it-forward feature, pledge your support to our philanthropy program.</p>
+        						<img src="img/icon-connect2.png" class="feature-icon"><h4>InstaConnect</h4>
+        						<p>Our goal is to offer the best experience while causing the least hassle to you. A phone call. You need not have internet access or an app to connect to an expert on Tapchief.</p>
         					</li>
         				</ul>
         				<a href="" class="action-button-orange">Sign up Now</a>
@@ -142,7 +142,7 @@
 			</div>
 		</section>
 
-		<section class="faq">
+		<section class="faq" id="faq">
 			<div class="container center">
 				<div class="row">
 					<h1>Frequently Asked Questions</h1>
@@ -179,8 +179,7 @@
 						<div class="col-md-4 col-sm-12">
 							<span style="font-size: 21px;"><span class="font-light">TAP</span><span class="font-bold">CHIEF</span></a>
 							<p class="footer-text">
-								Tapchief offers a cohesive platform to discover and schedule calls with experts to get advice across domains.
-							</p>
+								Tapchief offers a cohesive platform to discover and schedule calls with experts to get advice across domains.</p>
 						</div>
 						<div class="col-md-6 col-sm-12" style="text-align:right;">
 
@@ -216,6 +215,7 @@
     <script type="text/javascript" src="js/jquery.particleground.min.js"></script>
     <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
     <script type="text/javascript">
 	    $("#submit").leanModal();
 	    $("#submit").click(function(){
@@ -242,9 +242,16 @@
 		  });
 		});
 
-	</script>
-	<script>
-		  
+		$(function() {
+		    $('a.page-scroll').bind('click', function(event) {
+		        var $anchor = $(this);
+		        $('html, body').stop().animate({
+		            scrollTop: $($anchor.attr('href')).offset().top
+		        }, 1500, 'easeInOutExpo');
+		        event.preventDefault();
+		    });
+		});
+
 	</script>
   </body>
 

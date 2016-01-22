@@ -255,7 +255,8 @@ section h1{
     width: 40px;
     height: 2px;
     display: block;
-    margin: auto;
+    
+    margin:30px auto 50px auto;
     background-color: #D67A65;
 }
 
@@ -280,7 +281,8 @@ section h1{
 }
 
 p{
-	color: #868487;
+	color: #444;
+	font-size: 15px;
 }
 
 .hiw-icon {
@@ -290,7 +292,6 @@ p{
 }
 
 .feature-icon{
-	max-width:22px;
 	float: left;
 	margin-right: 15px;
 }

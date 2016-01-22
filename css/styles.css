@@ -333,19 +333,32 @@ p{
 	margin:10px 0px;
 }
 
+.sm-link{
+	color: rgba(255,255,255,0.6);
+	font-size: 14px;
+	display: block;
+	text-align: left;
+	margin:10px 0px;
+}
+
 .margin-10{
 	margin-right:10px;
 }
 
 .sm-icon{
-	max-width:24px;
+	max-width:18px;
 	opacity: 0.4;
 	transition:0.1s all ease-in;
 	margin-right: 10px;
+	margin-top: -2px;
 }
 
 .sm-icon:hover{
 	opacity:1;
+}
+
+.footer-bottom p{
+	font-size: 14px;
 }
 
 @media screen and (max-width: 480px) {

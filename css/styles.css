@@ -147,21 +147,20 @@ a:hover, a:focus{
 
 #particles {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 720px;
 	position: absolute;
 	top: 0px;
 	z-index: -1;
 	width: 100%;
-
 	background: #604966;
 }
 
 
 .about {
 	position:relative;
-	padding-top:70px;
-    text-align: center;
-    min-height: 80vh;
+	padding-top:80px;
+    	text-align: center;
+    	min-height: 600px;
 }
 
 .about h1{
@@ -203,9 +202,21 @@ a:hover, a:focus{
 	transition:0.2s all ease-in;
 }
 
+
 .action-button-orange:hover{
 	background: #D67A65;
 	color: #fff;
+}
+
+.disabled{
+	border:1px solid #aaa;
+	color: #aaa;	
+	cursor:default;
+}
+
+.disabled:hover{
+	background: transparent;
+	color: #aaa;	
 }
 
 .center{

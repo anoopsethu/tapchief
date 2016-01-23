@@ -147,7 +147,7 @@ a:hover, a:focus{
 
 #particles {
 	width: 100%;
-	min-height: 720px;
+	min-height: 750px;
 	position: absolute;
 	top: 0px;
 	z-index: -1;
